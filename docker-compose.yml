@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  app:
+    image: ghcr.io/williamthehood/echo-server:latest
+    restart: unless-stopped
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+volumes:
+  caddy_data:
+  caddy_config:
