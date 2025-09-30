@@ -1,2 +1,18 @@
-# ts-json-tools
-ts-json-tools
+ts-json-tools/
+  .github/
+    workflows/ci.yml
+    ISSUE_TEMPLATE.md
+    PULL_REQUEST_TEMPLATE.md
+  .gitignore
+  LICENSE
+  README.md
+  package.json
+  tsconfig.json
+  src/
+    index.ts
+    cli.ts
+    sortKeys.ts
+    pretty.ts
+  test/
+    sortKeys.test.ts
+    pretty.test.ts
