@@ -1,0 +1,27 @@
+{
+  "name": "ts-json-tools",
+  "version": "0.1.0",
+  "description": "Small CLI to sort JSON keys and pretty-print JSON. Also usable as a library.",
+  "type": "module",
+  "bin": {
+    "json-tools": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "keywords": ["json", "cli", "sort", "format", "typescript"],
+  "author": "YOUR_NAME",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
